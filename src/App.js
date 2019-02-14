@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-// import { HomePage } from "./views/HomePage";
 import { Homepage } from "./components/Homepage";
+// import { Homepage } from "./views/Homepage";
 import {
   BrowserRouter,
   Route,

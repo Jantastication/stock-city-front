@@ -1,10 +1,9 @@
 import React from "react";
-import { Container, Divider, Grid, Header } from "semantic-ui-react";
+import { Grid, Header } from "semantic-ui-react";
 import { ScrollBar } from "../containers/ScrollBar";
 import { SelectedCompanyContainer } from "../containers/SelectedCompanyContainer";
 import { withRouter } from "react-router";
-const backgroundUrl =
-  "/Users/Janu/Development/Flatiron/Module-projects/stock-city-app/stock-city-front/src/components/images/stock_exchange.mp4";
+// import animation from "/Users/Janu/Development/Flatiron/Module-projects/stock-city-app/stock-city-front/src/components/images/AnimationTicker.mp4";
 
 const url =
   "https://api.iextrading.com/1.0//stock/market/batch?symbols=aapl,fb,tsla,ba,brk.b,dis,ge,hd,nke,sbux,dji,amzn,baba,goog,nflx,adbe,ftnt,grub,irbt,mcd&types=company";
@@ -103,7 +102,7 @@ class _Homepage extends React.Component {
               <div>
                 <footer>
                   {" "}
-                  <h5>Made by Janu 🖤 </h5>
+                  <span>Made by Janu 🖤 </span>
                 </footer>
               </div>
             </Grid.Column>
@@ -138,7 +137,7 @@ class _Homepage extends React.Component {
             minHeight: "100%"
           }}
         >
-          <source src={myStockVideo} type="video/mp4" />
+          <source src={animation} type="video/mp4" />
         </video> */}
       </div>
     );

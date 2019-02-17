@@ -1,5 +1,5 @@
 import React from "react";
-import { Table, Button, Form } from "semantic-ui-react";
+import { Table, Button } from "semantic-ui-react";
 import { ActivePortfolioTableHeader } from "./ActivePortfolioTableHeader";
 
 export class ActivePortfolioTable extends React.Component {

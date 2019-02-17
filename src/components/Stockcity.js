@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import myVideo from "/Users/Janu/Development/Flatiron/Module-projects/stock-city-app/stock-city-front/src/components/images/Stock Market Animation.mp4";
 import { Button } from "semantic-ui-react";
 
-class _Stockcity extends React.Component {
+class _Stockcity extends Component {
   render() {
     return (
       <div>

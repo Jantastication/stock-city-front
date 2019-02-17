@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Button,
-  Form,
-  Divider,
-  Modal,
-  Image,
-  Header
-} from "semantic-ui-react";
+import { Container, Button, Modal, Image, Header } from "semantic-ui-react";
 import { PurchaseShareForm } from "../components/PurchaseShareForm";
 
 import stockPic from "/Users/Janu/Development/Flatiron/Module-projects/stock-city-app/stock-city-front/src/components/images/stockpic.jpg";

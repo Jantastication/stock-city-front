@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Table } from "semantic-ui-react";
+// import { Table } from "semantic-ui-react";
 import { ActivePortfolioTable } from "./ActivePortfolioTable";
 import { InactivePortfolioTable } from "./InactivePortfolioTable";
 
@@ -63,9 +63,6 @@ export class Portfolio extends Component {
     return (
       <div
         style={{
-          // border: "thick solid black",
-          // borderBottom: "5px solid red",
-          // borderTop: "5px solid red",
           padding: "20px 80px 20px 80px"
         }}
       >

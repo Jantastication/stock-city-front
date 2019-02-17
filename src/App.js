@@ -72,13 +72,13 @@ class App extends Component {
               }
             />
             {/* <Route path="/logout" component={Logout} /> */}
-
             <PrivateRoute
               path="/home"
               render={props => (
                 <Homepage {...props} currentPrices={this.state.currentPrices} />
               )}
             />
+
             <PrivateRoute
               path="/Portfolio"
               render={props => (

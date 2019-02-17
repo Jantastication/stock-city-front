@@ -1,6 +1,6 @@
 import React from "react";
 import { SBCompanyList } from "../components/SBCompanyList";
-import { Grid } from "semantic-ui-react";
+// import { Grid } from "semantic-ui-react";
 
 export class ScrollBar extends React.Component {
   render() {

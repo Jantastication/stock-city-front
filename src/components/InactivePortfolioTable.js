@@ -8,12 +8,14 @@ export class InactivePortfolioTable extends React.Component {
       transaction => transaction.status === false
     );
     return (
-      <Table>
+      <Table celled inverted color="black">
         <InactivePortfolioTableHeader />
 
         {filtered.map(transactionInfo => (
           <Table.Row>
-            <Table.Cell>{transactionInfo.stock}</Table.Cell>
+            <Table.Cell>
+              <b>{transactionInfo.stock}</b>
+            </Table.Cell>
             <Table.Cell>{transactionInfo.purchased_price}</Table.Cell>
             <Table.Cell>{transactionInfo.sold_price}</Table.Cell>
             <Table.Cell>

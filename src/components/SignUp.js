@@ -8,6 +8,7 @@ import {
   Grid,
   Header
 } from "semantic-ui-react";
+// import { myStockVideo } from "/Users/Janu/Development/Flatiron/Module-projects/stock-city-app/stock-city-front/src/components/images/stock_exchange.mp4";
 
 class _SignUp extends Component {
   signUpClickHandler = e => {
@@ -42,10 +43,12 @@ class _SignUp extends Component {
         >
           <Grid.Column style={{ maxWidth: 450 }}>
             <Header as="h2" textAlign="center">
-              Create an Account
+              Create Account
             </Header>
             <Form size="large" onSubmit={e => this.signUpClickHandler(e)}>
               <Segment stacked>
+                <Form.Input placeholder="First Name" name="firstNameInput" />
+                <Form.Input placeholder="Last Name" name="lastNameInput" />
                 <Form.Input
                   fluid
                   icon="mail"
@@ -53,8 +56,6 @@ class _SignUp extends Component {
                   placeholder="E-mail address"
                   name="emailInput"
                 />
-                <Form.Input placeholder="First Name" name="firstNameInput" />
-                <Form.Input placeholder="Last Name" name="lastNameInput" />
                 <Form.Input
                   fluid
                   icon="lock"
@@ -63,9 +64,10 @@ class _SignUp extends Component {
                   type="password"
                   name="passwordInput"
                 />
+                <Form.Checkbox label="I agree to the Terms and Conditions" />
 
                 <Button color="black" fluid size="large" type="submit">
-                  Create Account
+                  Sign up
                 </Button>
               </Segment>
             </Form>
@@ -74,46 +76,6 @@ class _SignUp extends Component {
             </Message>
           </Grid.Column>
         </Grid>
-        {/* <br />
-        <br />
-        <br />
-        <br />
-        <Segment onSubmit={e => this.signUpClickHandler(e)} inverted>
-          <Form inverted>
-            <h1>Sign Up</h1>
-            <Form.Group widths="equal">
-              <Form.Input
-                fluid
-                label="First name"
-                name="firstNameInput"
-                placeholder="First name"
-              />
-              <Form.Input
-                fluid
-                label="Last name"
-                name="lastNameInput"
-                placeholder="Last name"
-              />
-              <Form.Input
-                fluid
-                label="Email"
-                name="emailInput"
-                placeholder="email"
-              />
-              <Form.Input
-                fluid
-                label="Password"
-                type="password"
-                placeholder="Password"
-              />
-            </Form.Group>
-            <Form.Checkbox label="I agree to the Terms and Conditions" />
-            <Button type="submit">Submit</Button>
-            <Message>
-              Already have an account? <Link to="/login">Log In</Link>
-            </Message>
-          </Form>
-        </Segment> */}
       </div>
     );
   }

@@ -61,7 +61,14 @@ export class Portfolio extends Component {
   }
   render() {
     return (
-      <div>
+      <div
+        style={{
+          // border: "thick solid black",
+          // borderBottom: "5px solid red",
+          // borderTop: "5px solid red",
+          padding: "20px 80px 20px 80px"
+        }}
+      >
         <h1
           style={{
             textAlign: "center",
@@ -76,15 +83,15 @@ export class Portfolio extends Component {
           sellShare={this.sellShare}
           currentPrices={this.props.currentPrices}
         />
-        <h1
+        <h2
           style={{
             textAlign: "center",
-            marginTop: "20px",
+            marginTop: "40px",
             marginBottom: "20px"
           }}
         >
           Previously Owned
-        </h1>
+        </h2>
         <InactivePortfolioTable
           myTransactionList={this.state.myTransactionList}
         />

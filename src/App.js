@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Homepage } from "./components/Homepage";
-// import { Homepage } from "./views/Homepage";
+import { Stockcity } from "./components/Stockcity";
 import {
   BrowserRouter,
   Route,
@@ -68,10 +68,11 @@ class App extends Component {
               exact
               path="/"
               render={() =>
-                localStorage.userID ? <Redirect to="/home" /> : <Login />
+                localStorage.userID ? <Redirect to="/homepage" /> : <Login />
               }
             />
             {/* <Route path="/logout" component={Logout} /> */}
+
             <PrivateRoute
               path="/home"
               render={props => (
@@ -93,6 +94,7 @@ class App extends Component {
                 localStorage.userID ? <Redirect to="/home" /> : <SignUp />
               }
             />
+            <Route exact path="/stockcity" component={Stockcity} />
           </Switch>
         </div>
       </BrowserRouter>

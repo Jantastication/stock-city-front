@@ -10,7 +10,7 @@ export class ScrollBar extends React.Component {
           height: `${window.innerHeight}px`,
           overflowY: "scroll",
           marginLeft: "20px",
-          marginTop: "60px"
+          marginTop: "20px"
         }}
       >
         <SBCompanyList

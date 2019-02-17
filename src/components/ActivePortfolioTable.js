@@ -8,12 +8,14 @@ export class ActivePortfolioTable extends React.Component {
       transaction => transaction.status === true
     );
     return (
-      <Table>
+      <Table celled inverted color="blue">
         <ActivePortfolioTableHeader />
 
         {filtered.map(transactionInfo => (
           <Table.Row>
-            <Table.Cell>{transactionInfo.stock}</Table.Cell>
+            <Table.Cell>
+              <b>{transactionInfo.stock}</b>
+            </Table.Cell>
             <Table.Cell>{transactionInfo.purchased_price}</Table.Cell>
             <Table.Cell>
               {this.props.currentPrices[transactionInfo.stock_symbol]
@@ -30,6 +32,8 @@ export class ActivePortfolioTable extends React.Component {
             </Table.Cell>
             <Table.Cell>
               <Button
+                color="green"
+                style={{ color: "black" }}
                 onClick={this.props.sellShare.bind(this, transactionInfo)}
               >
                 Sell Share

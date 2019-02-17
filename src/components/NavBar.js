@@ -45,12 +45,7 @@ class _NavBar extends React.Component {
       <div>
         <Menu fixed="top" inverted>
           <Container>
-            <Menu.Item header>
-              {/* <Image
-                size="mini"
-                src="/logo.png"
-                style={{ marginRight: "1.5em" }}
-              /> */}
+            <Menu.Item as="a" onClick={() => this.goTo(`/Stockcity`)} header>
               <Icon name="chart line " size="big" /> Stock City
             </Menu.Item>
             {/* <Menu.Item as="a">Home </Menu.Item> */}
